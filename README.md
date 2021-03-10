@@ -7,11 +7,6 @@ In many real-world problems, collecting a large number of labeled samples is inf
 This repository is implemented using PyTorch and it includes code for running the few-shot learning experiments on CIFAR-FS, FC-100, miniImageNet and tieredImageNet datasets.
 
 
-![Screenshot](/figures/conceptual.pdf)
+![Screenshot](/figures/conceptual-1.png)
 
 
-<object data="http://yoursite.com/the.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="/figures/the.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
