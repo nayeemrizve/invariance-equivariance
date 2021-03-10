@@ -7,4 +7,4 @@ In many real-world problems, collecting a large number of labeled samples is inf
 This repository is implemented using PyTorch and it includes code for running the few-shot learning experiments on CIFAR-FS, FC-100, miniImageNet and tieredImageNet datasets.
 
 
-![Screenshot](https://github.com/nayeemrizve/invariance-equivariance/blob/main/figures/conceptual.pdf)
+![Screenshot](figures/conceptual.pdf)
