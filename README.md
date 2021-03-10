@@ -8,11 +8,9 @@ This repository is implemented using PyTorch and it includes code for running th
 
 <p align="center">
   <img src="/figures/conceptual-1.png" width="600">
-  <em>Approach Overview: Shapes represent different transformations and colors represent different classes. While the invariant features provide better discrimination, the equivariant features help us learn the internal structure of the data manifold.
-These complimentary representations help us generalize better to
-new tasks with only a few training samples. By jointly leveraging the strengths of equivariant and invariant features, our method
-achieves significant improvement over baseline (bottom row).</em>
 </p>
-
+<p>
+  <em>Approach Overview: Shapes represent different transformations and colors represent different classes. While the invariant features provide better discrimination, the equivariant features help us learn the internal structure of the data manifold. These complimentary representations help us generalize better to new tasks with only a few training samples. By jointly leveraging the strengths of equivariant and invariant features, our method achieves significant improvement over baseline (bottom row).</em>
+</p>
 
 
