@@ -24,4 +24,4 @@ distilled from an old copy of the model (teacher model on the right) across mult
 Notably, a dedicated memory bank of negative samples helps stabilize our invariant contrastive learning.</em>
 </p>
 
-# Dependencies
+## Dependencies
