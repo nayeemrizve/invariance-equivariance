@@ -7,14 +7,14 @@ In many real-world problems, collecting a large number of labeled samples is inf
 This repository is implemented using PyTorch and it includes code for running the few-shot learning experiments on CIFAR-FS, FC-100, miniImageNet and tieredImageNet datasets.
 
 <p align="center">
-  <img src="/figures/conceptual-1.png" width="600">
+  <img src="/figures/conceptual-1.png" width="500">
 </p>
 <p>
   <em>Approach Overview: Shapes represent different transformations and colors represent different classes. While the invariant features provide better discrimination, the equivariant features help us learn the internal structure of the data manifold. These complimentary representations help us generalize better to new tasks with only a few training samples. By jointly leveraging the strengths of equivariant and invariant features, our method achieves significant improvement over baseline (bottom row).</em>
 </p>
 
 <p align="center">
-  <img src="/figures/training.png" width="600">
+  <img src="/figures/training.png" width="800">
 </p>
 <p>
   <em>ANetwork Architecture during Training: A series of transformed inputs (transformed by applying transformations T1...TM) are
