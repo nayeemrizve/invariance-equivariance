@@ -8,5 +8,6 @@ This repository is implemented using PyTorch and it includes code for running th
 
 
 ![](/figures/conceptual-1.png =250)
+<img src="/figures/conceptual-1.png" width="200">
 
 
