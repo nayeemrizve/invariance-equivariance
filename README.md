@@ -18,7 +18,7 @@ This repository is implemented using PyTorch and it includes code for running th
 </p>
 <p>
   <em>Network Architecture during Training: A series of transformed inputs (transformed by applying transformations T1...TM) are
-provided to a shared feature extractor fΘ. The resulting embedding is forwarded to three parallel heads fΦ, fΘ and fΩ that focus on
+provided to a shared feature extractor fΘ. The resulting embedding is forwarded to three parallel heads fΨ, fΦ and fΩ that focus on
 learning equivariant features, discriminative class boundaries, and invariant features, respectively. The resulting output representations are
 distilled from an old copy of the model (teacher model on the right) across multiple-heads to further improve the encoded representations.
 Notably, a dedicated memory bank of negative samples helps stabilize our invariant contrastive learning.</em>
