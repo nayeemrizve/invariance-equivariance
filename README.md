@@ -43,3 +43,60 @@ run `pip3 install -r requirements.txt` to install all the dependencies.
 The data we used here is preprocessed by the repo of [MetaOptNet](https://github.com/kjunelee/MetaOptNet), Please find the renamed versions of the files in below link by [RFS](https://github.com/WangYueFt/rfs).
 
 [[DropBox Data Packages Link]](https://www.dropbox.com/sh/6yd1ygtyc3yd981/AABVeEqzC08YQv4UZk7lNHvya?dl=0)
+
+
+## Training
+
+### Invariance-Equivariance
+To perform the experiment with invariance and equivariance, run:
+
+```shell
+# For CIFAR-FS
+python3 train.py --model resnet12 --model_path save --dataset CIFAR-FS --data_root /path_to_data_folder(should contain subfolder CIFAR-FS) --n_aug_support_samples 5 --n_ways 5 --n_shots 1 --epochs 65 --lr_decay_epochs 60 --gamma 1.0 --contrast_temp 1.0 --mvavg_rate 0.99 --memfeature_size 64 --batch_size 64 --tags CIFAR-FS,INV_EQ
+
+# For FC100
+python3 train.py --model resnet12 --model_path save --dataset FC100 --data_root /path_to_data_folder(should contain subfolder FC100) --n_aug_support_samples 5 --n_ways 5 --n_shots 1 --epochs 65 --lr_decay_epochs 60 --gamma 1.0 --contrast_temp 1.0 --mvavg_rate 0.99 --memfeature_size 64 --batch_size 64 --tags FC100,INV_EQ
+
+# For miniImageNet (require multiple GPUs)
+python3 train.py --model resnet12 --model_path save --dataset miniImageNet --data_root /path_to_data_folder(should contain subfolder miniImageNet) --n_aug_support_samples 5 --n_ways 5 --n_shots 1 --epochs 65 --lr_decay_epochs 60 --gamma 1.0 --contrast_temp 1.0 --mvavg_rate 0.99 --memfeature_size 64 --batch_size 64 --tags miniImageNet,INV_EQ
+
+# For tieredImageNet (require multiple GPUs)
+python3 train.py --model resnet12 --model_path save --dataset tieredImageNet --data_root /path_to_data_folder(should contain subfolder tieredImageNet) --n_aug_support_samples 5 --n_ways 5 --n_shots 1 --epochs 60 --lr_decay_epochs 30,40,50 --gamma 1.0 --contrast_temp 1.0 --mvavg_rate 0.99 --memfeature_size 64 --batch_size 64 --tags tieredImageNet,INV_EQ
+```
+
+WANDB will create unique names for each runs, and save the model names accordingly. Use this name for the teacher in the next experiment.
+
+
+### Invariance-Equivariance-Distill
+To perform the distillation experiment, run: 
+
+```shell
+# For CIFAR-FS
+python3 train_distillation.py --model_s resnet12 --model_t resnet12 --path_t /path_to_teacher_model --model_path save --dataset CIFAR-FS --data_root /path_to_data_folder(should contain subfolder CIFAR-FS) --n_aug_support_samples 5 --n_ways 5 --n_shots 1 --epochs 65 --lr_decay_epochs 60 --gamma 1.0 --w_ce 1.0 --w_div 1.0 --kd_T 4 --contrast_temp 1.0 --mvavg_rate 0.99 --memfeature_size 64 --batch_size 64 --tags CIFAR-FS,INV_EQ_DISTILL
+
+# For FC100
+python3 train_distillation.py --model_s resnet12 --model_t resnet12 --path_t /path_to_teacher_model --model_path save --dataset FC100 --data_root /path_to_data_folder(should contain subfolder FC100) --n_aug_support_samples 5 --n_ways 5 --n_shots 1 --epochs 65 --lr_decay_epochs 60 --gamma 1.0 --w_ce 1.0 --w_div 1.0 --kd_T 4 --contrast_temp 1.0 --mvavg_rate 0.99 --memfeature_size 64 --batch_size 64 --tags FC100,INV_EQ_DISTILL
+
+# For miniImageNet (require multiple GPUs)
+python3 train_distillation.py --model_s resnet12 --model_t resnet12 --path_t /path_to_teacher_model --model_path save --dataset miniImageNet --data_root /path_to_data_folder(should contain subfolder miniImageNet) --n_aug_support_samples 5 --n_ways 5 --n_shots 1 --epochs 65 --lr_decay_epochs 60 --gamma 1.0 --w_ce 1.0 --w_div 1.0 --kd_T 4 --contrast_temp 1.0 --mvavg_rate 0.99 --memfeature_size 64 --batch_size 64 --tags miniImageNet,INV_EQ_DISTILL
+
+# For tieredImageNet (require multiple GPUs)
+python3 train_distillation.py --model_s resnet12 --model_t resnet12 --path_t /path_to_teacher_model --model_path save --dataset tieredImageNet --data_root /path_to_data_folder(should contain subfolder tieredImageNet) --n_aug_support_samples 5 --n_ways 5 --n_shots 1 --epochs 60 --lr_decay_epochs 30,40,50 --gamma 1.0 --w_ce 1.0 --w_div 1.0 --kd_T 4 --contrast_temp 1.0 --mvavg_rate 0.99 --memfeature_size 64 --batch_size 64 --tags tieredImageNet,INV_EQ_DISTILL
+```
+
+
+### Evaluation
+Each of the training run will provide the final evaluation scores. However, for separate evaluation, run:
+```shell
+# For CIFAR-FS
+python3 eval_fewshot.py --model resnet12 --dataset CIFAR-FS --data_root /path_to_data_folder(should contain subfolder CIFAR-FS) --n_aug_support_samples 5 --n_ways 5 --n_shots 1 --model_path /path_to_model
+
+# For FC100
+python3 eval_fewshot.py --model resnet12 --dataset FC100 --data_root /path_to_data_folder(should contain subfolder FC100) --n_aug_support_samples 5 --n_ways 5 --n_shots 1 --model_path /path_to_model
+
+# For miniImageNet
+python3 eval_fewshot.py --model resnet12 --dataset miniImageNet --data_root /path_to_data_folder(should contain subfolder miniImageNet) --n_aug_support_samples 5 --n_ways 5 --n_shots 1 --model_path /path_to_model
+
+# For tieredImageNet
+python3 eval_fewshot.py --model resnet12 --dataset tieredImageNet --data_root /path_to_data_folder(should contain subfolder tieredImageNet) --n_aug_support_samples 5 --n_ways 5 --n_shots 1 --model_path /path_to_model
+```
