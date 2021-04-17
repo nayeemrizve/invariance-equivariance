@@ -24,4 +24,22 @@ distilled from an old copy of the model (teacher model on the right) across mult
 Notably, a dedicated memory bank of negative samples helps stabilize our invariant contrastive learning.</em>
 </p>
 
-## Code Coming Soon...
+## Dependencies
+This code requires the following:
+* matplotlib==3.2.1
+* mkl==2019.0
+* numpy==1.18.4
+* Pillow==7.1.2
+* scikit_learn==0.23.1
+* scipy==1.4.1
+* torch==1.5.0
+* torchvision==0.6.0
+* tqdm==4.46.0
+* wandb==0.8.36
+
+run `pip3 install -r requirements.txt` to install all the dependencies. 
+
+## Download Data
+The data we used here is preprocessed by the repo of [MetaOptNet](https://github.com/kjunelee/MetaOptNet), Please find the renamed versions of the files in below link by [RFS](https://github.com/WangYueFt/rfs).
+
+[[DropBox Data Packages Link]](https://www.dropbox.com/sh/6yd1ygtyc3yd981/AABVeEqzC08YQv4UZk7lNHvya?dl=0)
