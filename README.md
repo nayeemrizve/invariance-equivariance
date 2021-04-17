@@ -105,7 +105,7 @@ python3 eval_fewshot.py --model resnet12 --dataset tieredImageNet --data_root /p
 ```
 
 ## We Credit
-Thanks to https://github.com/WangYueFt/rfs and https://github.com/brjathu/SKD, for the preliminary implementations.
+Thanks to https://github.com/WangYueFt/rfs, for the preliminary implementations.
 
 ## Citation
 ```
