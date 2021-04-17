@@ -26,15 +26,18 @@ Notably, a dedicated memory bank of negative samples helps stabilize our invaria
 
 ## Dependencies
 This code requires the following:
+* Python >= 3.6
+* numpy==1.16.2
+* Pillow==5.4.1
+* scikit-learn==0.21.1
+* scipy==1.2.1
+* torch==1.3.0
+* torchvision==0.8.1
+* tqdm==4.36.1
+* tensorboardx==1.7
+* tensorboard==1.13.1
 * matplotlib==3.2.1
 * mkl==2019.0
-* numpy==1.18.4
-* Pillow==7.1.2
-* scikit_learn==0.23.1
-* scipy==1.4.1
-* torch==1.5.0
-* torchvision==0.6.0
-* tqdm==4.46.0
 * wandb==0.8.36
 
 run `pip3 install -r requirements.txt` to install all the dependencies. 
