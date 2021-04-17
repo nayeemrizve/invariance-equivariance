@@ -100,3 +100,16 @@ python3 eval_fewshot.py --model resnet12 --dataset miniImageNet --data_root /pat
 # For tieredImageNet
 python3 eval_fewshot.py --model resnet12 --dataset tieredImageNet --data_root /path_to_data_folder(should contain subfolder tieredImageNet) --n_aug_support_samples 5 --n_ways 5 --n_shots 1 --model_path /path_to_model
 ```
+
+## We Credit
+Thanks to https://github.com/WangYueFt/rfs and https://github.com/brjathu/SKD, for the preliminary implementations.
+
+## Citation
+```
+@article{rizve2021exploring,
+  title={Exploring Complementary Strengths of Invariant and Equivariant Representations for Few-Shot Learning},
+  author={Mamshad Nayeem Rizve and Salman Khan and Fahad Shahbaz Khan and Mubarak Shah},
+  journal={https://arxiv.org/abs/2103.01315},
+  year = {2021}
+}
+```
