@@ -109,10 +109,12 @@ Thanks to https://github.com/WangYueFt/rfs, for the preliminary implementations.
 
 ## Citation
 ```
-@article{rizve2021exploring,
-  title={Exploring Complementary Strengths of Invariant and Equivariant Representations for Few-Shot Learning},
-  author={Mamshad Nayeem Rizve and Salman Khan and Fahad Shahbaz Khan and Mubarak Shah},
-  journal={https://arxiv.org/abs/2103.01315},
-  year = {2021}
+@InProceedings{Rizve_2021_CVPR,
+    author    = {Rizve, Mamshad Nayeem and Khan, Salman and Khan, Fahad Shahbaz and Shah, Mubarak},
+    title     = {Exploring Complementary Strengths of Invariant and Equivariant Representations for Few-Shot Learning},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {10836-10846}
 }
 ```
