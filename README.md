@@ -28,7 +28,7 @@ Notably, a dedicated memory bank of negative samples helps stabilize our invaria
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/NfE1CXqzE8s/2.jpg)](https://www.youtube.com/watch?v=NfE1CXqzE8s?start=1100)
 
 
-<iframe width="1114" height="696" src="https://www.youtube.com/embed/NfE1CXqzE8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Everything Is AWESOME](https://yt-embed.herokuapp.com/embed?v=StTqXEQ2l-Y)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
 
 
 ## Dependencies
