@@ -24,6 +24,10 @@ distilled from an old copy of the model (teacher model on the right) across mult
 Notably, a dedicated memory bank of negative samples helps stabilize our invariant contrastive learning.</em>
 </p>
 
+## Presentation
+<iframe width="1205" height="753" src="https://www.youtube.com/embed/NfE1CXqzE8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Dependencies
 This code requires the following:
 * Python >= 3.6
