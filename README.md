@@ -25,7 +25,7 @@ Notably, a dedicated memory bank of negative samples helps stabilize our invaria
 </p>
 
 ## Presentation
-<iframe width="1205" height="753" src="https://www.youtube.com/embed/NfE1CXqzE8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/NfE1CXqzE8s/0.jpg)](https://www.youtube.com/watch?v=NfE1CXqzE8s)
 
 
 ## Dependencies
