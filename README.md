@@ -25,7 +25,7 @@ Notably, a dedicated memory bank of negative samples helps stabilize our invaria
 </p>
 
 ## Presentation
-[![Everything Is AWESOME](https://yt-embed.herokuapp.com/embed?v=NfE1CXqzE8s)](https://www.youtube.com/watch?v=NfE1CXqzE8s&start=1100&end=2195 "Exploring Complementary Strengths of Invariant and Equivariant Representations for Few-Shot Learning")
+[![Presentation: Exploring Complementary Strengths of Invariant and Equivariant Representations for Few-Shot Learning](https://yt-embed.herokuapp.com/embed?v=NfE1CXqzE8s)](https://www.youtube.com/watch?v=NfE1CXqzE8s&start=1100 "Presentation: Exploring Complementary Strengths of Invariant and Equivariant Representations for Few-Shot Learning")
 
 
 ## Dependencies
